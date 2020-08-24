@@ -1,5 +1,5 @@
 rootProject.name = "RickAndMortyDatabase"
 
 with(Modules) {
-    include(app, domain)
+    include(app, domain, data)
 }

@@ -6,6 +6,7 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion Versions.compileSDK
     buildToolsVersion Versions.buildToolsVersion
+
     defaultConfig {
         applicationId ApplicationID.id
         minSdkVersion Versions.minSDK
@@ -14,6 +15,7 @@ android {
         versionName Releases.versionName
         testInstrumentationRunner TestLibraries.customInstrumentationRunner
     }
+
     buildTypes {
         release {
             minifyEnabled true
@@ -21,6 +23,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     testOptions {
         animationsDisabled = true
 
@@ -37,9 +40,11 @@ android {
             ignoreFailures true
         }
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
 }
 
 dependencies {

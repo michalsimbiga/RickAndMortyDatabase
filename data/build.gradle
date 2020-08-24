@@ -1,0 +1,30 @@
+apply from: "$rootDir/common-kotlin.gradle"
+apply plugin: 'kotlin-kapt'
+
+dependencies {
+    implementation project(Modules.domain)
+
+    implementation Libraries.coreKtx
+    implementation Libraries.koinAndroidX
+
+    implementation Libraries.kotlinCoroutines
+
+    implementation Libraries.room
+    kapt Libraries.roomAnnotationProcessor
+    implementation Libraries.roomKotlinExt
+
+    implementation Libraries.threeTen
+
+    implementation Libraries.retrofit
+    implementation Libraries.okHttpInterceptor
+    implementation Libraries.okHttp
+    implementation Libraries.moshi
+    implementation Libraries.moshiKotlin
+    implementation Libraries.moshiConverter
+
+    testImplementation TestLibraries.junit
+    testImplementation TestLibraries.mockk
+    testImplementation TestLibraries.kotlinCoroutinesTest
+
+    testImplementation TestLibraries.threetenabp
+}
