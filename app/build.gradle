@@ -68,8 +68,6 @@ dependencies {
 
     implementation Libraries.material
 
-    implementation Libraries.motionLib
-    implementation Libraries.maps
 
     implementation Libraries.navigationFragmentKtx
     implementation Libraries.navigationKtx

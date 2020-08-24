@@ -1,0 +1,15 @@
+apply from: "$rootDir/common-kotlin.gradle"
+
+dependencies {
+    implementation Libraries.coreKtx
+
+    implementation Libraries.koinAndroidX
+    implementation Libraries.retrofit
+    implementation Libraries.kotlinCoroutines
+
+    implementation Libraries.threeTen
+
+    testImplementation TestLibraries.junit
+    testImplementation TestLibraries.mockk
+    testImplementation TestLibraries.kotlinCoroutinesTest
+}
